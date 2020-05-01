@@ -18,11 +18,16 @@ let workHours = 8;
 painter.paint();
 console.log(painter.paint())
 
-const tools = ["brush", "roller", "caulk", "sandpaper", "dropcloth"];
-//tools.push("paint", "ladder");//
-const count = tools.push('paint');
+/*const tools = ["brush", "roller", "caulk", "sandpaper", "dropcloth"];
+const count = painter.tools.push('paint');
 console.log(count);
 console.log(tools);
+*/
 
+//cost newTools = "paint";
+const newTools = painter.tools.push(`paint`);
+painter.paint();
+console.log(`${painter.tools}`);
+console.log(painter.paint());
 
 
